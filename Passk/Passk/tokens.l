@@ -5,14 +5,19 @@
 #include <cstdio>
 #include <cmath>
 #include <string>
-#include "TableIdentifier.h"
+#include "parser.hpp"
+#include "node.h"
+#include "common.h"
+
+#define SAVE_TOKEN yylval.str = new std::string(yytext, yyleng)
+
+
 using namespace std;
-#include "parser.tab.h"
 int row = 1, col = 1;
 extern int yyerror ( char* m );
 extern int yylex ();
 extern void commenteof ();
-
+//extern "C" int yywrap();
 
 %}
 
@@ -81,48 +86,36 @@ DIGITS [0-9]+
 "**"							col += yyleng; return OP_EXP;
 "^"								col += yyleng; return OP_PTR;
 "true"							{			
-									//TableIdentifier::_lastBoolean = true;
-									TableIdentifier::last_token = "true";
+									yylval.v_bool = true;
 									col += yyleng;
 									return TOK_BOOLEAN;
 								}
 "false"							{
-									//TableIdentifier::_lastBoolean = false;
-									TableIdentifier::last_token = "false";
+									yylval.v_bool = false;
 									col += yyleng;
 									return TOK_BOOLEAN;
 								}
 
 [a-zA-Z]([a-zA-Z0-9_])*         {
-                                    /*TableIdentifier::_lastIdentifier = yytext;
-                                    TableIdentifier* ti = TableIdentifier::getInstance();
-
-                                    ti->add(yytext);
-                                    col += yyleng;*/
-									TableIdentifier::last_token = string(yytext);
+                                    SAVE_TOKEN;
 									col += yyleng;
                                     return TOK_IDENT;
                                 }
 
 '({NQUOTE}|'')+'                {
-                                    /*TableIdentifier::_lastString = yytext;*/
-									TableIdentifier::last_token = string(yytext);
+                                    SAVE_TOKEN;
                                     col += yyleng;
 
                                     return TOK_STRING;
                                 }
 {DIGITS}						{
-									/*int digits = atoi(yytext);
-                                    TableIdentifier::_lastInteger = digits;
-									TableIdentifier::_lastReal = digits;*/
-									TableIdentifier::last_token = string(yytext);
+									yylval.v_int = atoi(yytext);
                                     col += yyleng;
 
                                     return TOK_INTEGER;
                                 }
 {DIGITS}"."{DIGITS}				{
-									/*TableIdentifier::_lastReal = atof(yytext);*/
-									TableIdentifier::last_token = string(yytext);
+									yylval.v_real = atof(yytext);
                                     col += yyleng;
 
 									return TOK_REAL;

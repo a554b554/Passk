@@ -1,0 +1,276 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26CAEBE81B36C810007BE1F0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAEBE71B36C810007BE1F0 /* main.cpp */; };
+		26CAEC001B36D299007BE1F0 /* Symtab.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAEBFE1B36D299007BE1F0 /* Symtab.cpp */; };
+		26CAEC101B36E476007BE1F0 /* parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAEC0E1B36E476007BE1F0 /* parser.cpp */; };
+		26CAEC121B36E481007BE1F0 /* tokens.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAEC111B36E481007BE1F0 /* tokens.cpp */; };
+		26CAEC151B3710B0007BE1F0 /* genCode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 26CAEC141B3710B0007BE1F0 /* genCode.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26CAEBE21B36C810007BE1F0 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26CAEBE41B36C810007BE1F0 /* Passk */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Passk; sourceTree = BUILT_PRODUCTS_DIR; };
+		26CAEBE71B36C810007BE1F0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		26CAEBFA1B36CA5F007BE1F0 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		26CAEBFE1B36D299007BE1F0 /* Symtab.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Symtab.cpp; sourceTree = "<group>"; };
+		26CAEBFF1B36D299007BE1F0 /* Symtab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symtab.h; sourceTree = "<group>"; };
+		26CAEC081B36D587007BE1F0 /* node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = node.h; sourceTree = "<group>"; };
+		26CAEC0E1B36E476007BE1F0 /* parser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = parser.cpp; sourceTree = "<group>"; };
+		26CAEC111B36E481007BE1F0 /* tokens.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tokens.cpp; sourceTree = "<group>"; };
+		26CAEC131B36F6DC007BE1F0 /* parser.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = parser.hpp; sourceTree = "<group>"; };
+		26CAEC141B3710B0007BE1F0 /* genCode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = genCode.cpp; sourceTree = "<group>"; };
+		26CAEC161B37A447007BE1F0 /* genCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = genCode.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26CAEBE11B36C810007BE1F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26CAEBDB1B36C810007BE1F0 = {
+			isa = PBXGroup;
+			children = (
+				26CAEBE61B36C810007BE1F0 /* Passk */,
+				26CAEBE51B36C810007BE1F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		26CAEBE51B36C810007BE1F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26CAEBE41B36C810007BE1F0 /* Passk */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26CAEBE61B36C810007BE1F0 /* Passk */ = {
+			isa = PBXGroup;
+			children = (
+				26CAEBFE1B36D299007BE1F0 /* Symtab.cpp */,
+				26CAEBFF1B36D299007BE1F0 /* Symtab.h */,
+				26CAEBE71B36C810007BE1F0 /* main.cpp */,
+				26CAEC081B36D587007BE1F0 /* node.h */,
+				26CAEC161B37A447007BE1F0 /* genCode.h */,
+				26CAEC141B3710B0007BE1F0 /* genCode.cpp */,
+				26CAEBFA1B36CA5F007BE1F0 /* common.h */,
+				26CAEBF51B36C907007BE1F0 /* lex&yacc */,
+			);
+			path = Passk;
+			sourceTree = "<group>";
+		};
+		26CAEBF51B36C907007BE1F0 /* lex&yacc */ = {
+			isa = PBXGroup;
+			children = (
+				26CAEC131B36F6DC007BE1F0 /* parser.hpp */,
+				26CAEC111B36E481007BE1F0 /* tokens.cpp */,
+				26CAEC0E1B36E476007BE1F0 /* parser.cpp */,
+			);
+			name = "lex&yacc";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26CAEBE31B36C810007BE1F0 /* Passk */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26CAEBEB1B36C810007BE1F0 /* Build configuration list for PBXNativeTarget "Passk" */;
+			buildPhases = (
+				26CAEBE01B36C810007BE1F0 /* Sources */,
+				26CAEBE11B36C810007BE1F0 /* Frameworks */,
+				26CAEBE21B36C810007BE1F0 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Passk;
+			productName = Passk;
+			productReference = 26CAEBE41B36C810007BE1F0 /* Passk */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26CAEBDC1B36C810007BE1F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = DarkTango;
+				TargetAttributes = {
+					26CAEBE31B36C810007BE1F0 = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 26CAEBDF1B36C810007BE1F0 /* Build configuration list for PBXProject "Passk" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 26CAEBDB1B36C810007BE1F0;
+			productRefGroup = 26CAEBE51B36C810007BE1F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26CAEBE31B36C810007BE1F0 /* Passk */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26CAEBE01B36C810007BE1F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26CAEBE81B36C810007BE1F0 /* main.cpp in Sources */,
+				26CAEC101B36E476007BE1F0 /* parser.cpp in Sources */,
+				26CAEC151B3710B0007BE1F0 /* genCode.cpp in Sources */,
+				26CAEC001B36D299007BE1F0 /* Symtab.cpp in Sources */,
+				26CAEC121B36E481007BE1F0 /* tokens.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		26CAEBE91B36C810007BE1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		26CAEBEA1B36C810007BE1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		26CAEBEC1B36C810007BE1F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26CAEBED1B36C810007BE1F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26CAEBDF1B36C810007BE1F0 /* Build configuration list for PBXProject "Passk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26CAEBE91B36C810007BE1F0 /* Debug */,
+				26CAEBEA1B36C810007BE1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26CAEBEB1B36C810007BE1F0 /* Build configuration list for PBXNativeTarget "Passk" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26CAEBEC1B36C810007BE1F0 /* Debug */,
+				26CAEBED1B36C810007BE1F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26CAEBDC1B36C810007BE1F0 /* Project object */;
+}

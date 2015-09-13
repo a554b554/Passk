@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EFFE66FA-86EC-4490-B6E7-AE8AFD71FBC6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Passk</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>452E5807A87957FEB33EEAD47424218C6E19BD9B</key>
+		<string>https://github.com/a554b554/Passk.git</string>
+		<key>91D1742AEC35B736BA1EA5AE26EA41EB6FDF1055</key>
+		<string>https://github.com/a554b554/PascalCompiler.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Passk/Passk.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>452E5807A87957FEB33EEAD47424218C6E19BD9B</key>
+		<string>../../..Passk/Passk</string>
+		<key>91D1742AEC35B736BA1EA5AE26EA41EB6FDF1055</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/a554b554/PascalCompiler.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>91D1742AEC35B736BA1EA5AE26EA41EB6FDF1055</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>91D1742AEC35B736BA1EA5AE26EA41EB6FDF1055</string>
+			<key>IDESourceControlWCCName</key>
+			<string>PascalCompiler</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>452E5807A87957FEB33EEAD47424218C6E19BD9B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Passk</string>
+		</dict>
+	</array>
+</dict>
+</plist>

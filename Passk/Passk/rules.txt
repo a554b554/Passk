@@ -1,0 +1,10 @@
+Pass Value:
+rdi
+rsi
+rdx
+rcx
+r8
+r9
+Return Value:
+rax
+rdx
