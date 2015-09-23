@@ -1,7 +1,7 @@
 
 SPL compiler.
 
-Copyright Zhejiang University.
+Copyright a554b554.
 
 1. Install
 
